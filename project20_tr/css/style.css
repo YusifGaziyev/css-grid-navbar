@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-blue: #306998;
+    --light-blue: #4B8BBE;
+    --dark-yellow: #FFD43B;
+    --light-yellow: #FFE873;
+    --dark-gray: #646464;
+    --black: #000;
+    --dark-black: #1a1a1a;
+    --light-black: #333333;
+    --white: #fff;
+    --dark-white: #f2f2f2;
+    --light-white: #d9d9d9;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--light-black);
+}
+
+/* header logo */
+
+.header .header-logo {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding-left: 2rem;
+}
+
+/* header logo icon */
+
+.header-logo i {
+    font-size: 4rem;
+    color: var(--light-blue);
+}
+
+/* header nav */
+
+.header .header-nav {
+    display: grid;
+    justify-items: right;
+    width: 100%;
+    height: 5rem;
+}
+
+/* nav items ul */
+
+.header-nav .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5rem;
+}
+
+/* nav item lists */
+
+.nav-items .nav-item {
+    padding: 0 1rem;
+}
+
+/* nav link */
+
+.nav-item .nav-link {
+    color: var(--light-yellow);
+}
+
+/* nav link hover */
+
+.nav-item .nav-link:not(.nav-link1):hover {
+    color: var(--light-blue);
+    border-bottom: 0.15rem solid var(--light-blue);
+    padding-bottom: 0.5rem;
+    transition-duration: .5s;
+}
+
+/* nav link first child */
+
+.nav-item .nav-link1 {
+    padding: 0.6rem 1rem;
+    border-radius: 0.2rem;
+    background-color: var(--dark-blue);
+}
+
+/* nav link first child hover */
+
+.nav-item .nav-link1:hover {
+    background-color: var(--light-yellow);
+    color: var(--light-blue);
+    transition-duration: .5s;
+}
+
+/* responsive bar none */
+
+.nav-items .responsive-item {
+    display: none;
+}
